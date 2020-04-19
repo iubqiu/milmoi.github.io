@@ -1,0 +1,11 @@
+sudo apt-get update
+sudo apt install software-properties-common
+sudo apt-add-repository universe
+sudo apt install -y openssl curl nginx mysql-client mysql-server php-fpm php-cli php-curl php-mysql
+sudo mysql_secure_installation
+mkdir -p /srv && cd /srv
+curl -L -o pufferpanel.tar.gz https://git.io/fNZYg
+tar -xf pufferpanel.tar.gz
+cd pufferpanel 
+chmod +x pufferpanel
+./pufferpanel install
