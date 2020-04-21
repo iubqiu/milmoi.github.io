@@ -9,3 +9,4 @@ tar -xf pufferpanel.tar.gz
 cd pufferpanel 
 chmod +x pufferpanel
 ./pufferpanel install
+sudo chmod -R 777 /var/lib/pufferd/templates
